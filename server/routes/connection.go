@@ -11,7 +11,7 @@ import (
 
 func DBInstance() *mongo.Client {
 	//return mongo client
-	MongoURI := "mongodb+srv://d9090c:<Mongodb123>@cluster0.hjwquyo.mongodb.net/?retryWrites=true&w=majority"
+	MongoURI := "mongodb+srv://d9090c:Mongodb123@cluster0.hjwquyo.mongodb.net/?retryWrites=true&w=majority"
 
 	clientOptions := options.Client().ApplyURI(MongoURI)
 	client, err := mongo.Connect(context.TODO(), clientOptions)
